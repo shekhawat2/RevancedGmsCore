@@ -7,11 +7,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
-configurations {
-    withNearbyImplementation
-    withoutNearbyImplementation
-}
-
 dependencies {
     implementation "com.squareup.wire:wire-runtime:$wireVersion"
     implementation "de.hdodenhof:circleimageview:1.3.0"
@@ -36,8 +31,6 @@ dependencies {
     implementation project(':play-services-fido-core')
     implementation project(':play-services-gmscompliance-core')
     implementation project(':play-services-location-core')
-    withNearbyImplementation project(':play-services-nearby-core')
-    withNearbyImplementation project(':play-services-nearby-core-ui')
     implementation project(':play-services-safetynet-core')
     implementation project(':play-services-oss-licenses-core')
     implementation project(':play-services-safetynet-core-ui')
@@ -117,12 +110,6 @@ android {
         main {
             java.srcDirs += 'src/main/kotlin'
         }
-        withNearby {
-            java.srcDirs += 'src/withNearby/kotlin'
-        }
-        withoutNearby {
-            java.srcDirs += 'src/withoutNearby/kotlin'
-        }
     }
 
     lintOptions {
@@ -133,17 +120,6 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-
-    flavorDimensions 'maps', 'nearby'
-    productFlavors {
-        withNearby {
-            dimension 'nearby'
-        }
-        withoutNearby {
-            dimension 'nearby'
-            versionNameSuffix '-noen'
         }
     }
 

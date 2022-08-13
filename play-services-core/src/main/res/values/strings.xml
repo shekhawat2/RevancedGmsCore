@@ -49,6 +49,7 @@ This can take a couple of minutes."</string>
     <string name="perm_provision_description">Allows the app to configure microG services without user interaction</string>
 
     <string name="service_name_checkin">Google device registration</string>
+    <string name="service_name_exposure">Exposure Notifications</string>
     <string name="service_name_mcs">Cloud Messaging</string>
     <string name="service_name_snet">Google SafetyNet</string>
 
