@@ -47,12 +47,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 
 import org.microg.gms.location.LocationConstants;
-//import org.microg.gms.maps.vtm.BackendMapView;
-//import org.microg.gms.maps.vtm.GmsMapsTypeHelper;
 import org.microg.safeparcel.SafeParcelUtil;
-//import org.oscim.core.MapPosition;
-//import org.oscim.event.Event;
-//import org.oscim.map.Map;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -62,7 +57,6 @@ import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 import static android.content.pm.PackageManager.PERMISSION_GRANTED;
 import static org.microg.gms.location.LocationConstants.EXTRA_PRIMARY_COLOR;
 import static org.microg.gms.location.LocationConstants.EXTRA_PRIMARY_COLOR_DARK;
-//import static org.microg.gms.maps.vtm.GmsMapsTypeHelper.fromLatLngBounds;
 
 public class
 

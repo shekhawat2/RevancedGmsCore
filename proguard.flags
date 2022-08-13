@@ -6,8 +6,6 @@
 # External libs
 -dontwarn okio.**
 -dontwarn com.squareup.okhttp.**
--dontwarn org.oscim.tiling.source.OkHttpEngine
--dontwarn org.oscim.tiling.source.OkHttpEngine$OkHttpFactory
 -dontwarn com.caverock.androidsvg.**
 -dontwarn org.slf4j.**
 -dontwarn org.codehaus.jackson.**
